@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurnal Harian Siswa Informatika</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jurnal Harian Siswa</h1>
+
+        <div class="form-section">
+            <div class="input-group">
+                <label for="kelas-select">Pilih Kelas:</label>
+                <select id="kelas-select"></select>
+            </div>
+
+            <div class="input-group">
+                <label for="tanggal-input">Tanggal:</label>
+                <input type="text" id="tanggal-input" placeholder="Pilih Tanggal">
+            </div>
+        </div>
+
+        <div id="jurnal-entries">
+            </div>
+
+        <button id="export-pdf-btn">Export ke PDF</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
